@@ -29,6 +29,10 @@ module.exports = () => {
           exclude: /node_modules/,
           use:{
             loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins:[ '@babel/pliugin-proposal-objec-rest-spread', '@babel/transform-runtime'],
+            }
           }
         }
       ],
