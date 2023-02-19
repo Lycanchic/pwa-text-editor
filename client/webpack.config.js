@@ -24,11 +24,11 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.ts$/,
+          test: /\.css$/,
           exclude: /node_modules/,
-          use: [
+          use: [ 
             {
-              loader: 'ts-loader'
+              loader: 'style-loader', 'css-loader'
             }
           ]
         }
@@ -36,4 +36,3 @@ module.exports = () => {
     }
    }
   };
-  module.exports = config;

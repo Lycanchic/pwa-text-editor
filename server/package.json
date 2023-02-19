@@ -4,7 +4,9 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "server": "nodemon server.js --ignore client"
+        "server": "nodemon server/server.js --ignore client",
+        "client": "cd client && npm run start",
+        "start": "concurrently npm run server && npm run client"
     },
     "keywords": [],
     "author": "",
@@ -15,6 +17,7 @@
     "devDependencies": {
         "nodemon": "^2.0.4",
         "webpack": "^5.75.0",
-        "webpack-cli": "^5.0.1"
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.11.1"
     }
 }
