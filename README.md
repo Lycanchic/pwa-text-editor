@@ -1,5 +1,5 @@
 # PWA Text Editor
-**PWA Editor** is an application built using HTML, CSS, JS, MySQL, Handlebars.js, Sequelize, Json, typescript, insomnia, prettier, bootstrap, express and node.js, mongodb.
+**PWA Editor** is an application built using HTML, CSS, JS, Sequelize, Json, insomnia, prettier, express, webpacks, idb and node.js.
 
 
 ## Images of the deployed website:
@@ -65,17 +65,14 @@ THEN I should have proper build scripts for a webpack application
     HTML 
     CSS 
     JS 
-    MySQL
-    Handlebars.js
     Seqealize
     Json 
-    typescript
     express 
     node.js
-    Bootstrap
-    Bcrypt
     insomnia
     prettier
+    idb
+    webpacks
  
 
 ## THE DEPLOYED REPO CAN BE FOUND AT THE FOLLOWING URL:
@@ -85,16 +82,12 @@ THEN I should have proper build scripts for a webpack application
 
   ## INSTALLATION OF THE REPO FROM GITHUB
   ***
-  A copy of the repository can be cloned at [${response.GitHub}]. 
+  A copy of the repository can be cloned at [Click here](https://github.com/Lycanchic/pwa-text-editor.git)
     * Simply click on the repo and select **Clone**. 
     * From the drop down menu select the copy icon. Type (directly into your terminal):
     ```
     'git clone' + 'the repo link' + enter.
      
-
-  ## FUTURE ITERATIONS
-  ***
-  **Future iterations**- 
 
 - - -
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
