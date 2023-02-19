@@ -27,11 +27,13 @@ module.exports = () => {
         swDest: 'src/sw.js',
       }),
       new WebpackPwaManifest({
-        name: 'My App',
-        short_name: 'My App',
-        description: 'My App Description',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E',
+        description: 'JavaScript note taker',
         background_color: '#ffffff',
         theme_color: '#31a9e1',
+        start_url: '/',
+        public_path: '/',
         icons: [
           {
             src: 'src/images/icon.png',
