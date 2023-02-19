@@ -26,7 +26,7 @@ module.exports = () => {
       }),
       new InjectManifest ({
         swSrc: './src-sw.js',
-        swDest: 'dist/sw.js',
+        swDest: 'src/sw.js',
       }),
       new WebpackPwaManifest({
         name: 'Just Another Text Editor',
@@ -67,3 +67,4 @@ module.exports = () => {
    
   };
  }
+ console.log('Webpack build output: ', __dirname);
