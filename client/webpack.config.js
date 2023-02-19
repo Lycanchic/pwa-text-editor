@@ -34,9 +34,9 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: 'src/index.html'
       }),
-      new InjectMainfest.GenerateSW({
-        clientsClaim: true,
-        skipWaiting: true,
+      new InjectMainfest ({
+        swSrc: './src-sw.js',
+        swDest: 'src/sw.js',
       }),
       new WebpackPwaManifest({
         name: 'My App',
@@ -46,7 +46,7 @@ module.exports = () => {
         theme_color: '#31a9e1',
         icons: [
           {
-            src: 'src/assets/icon.png',
+            src: 'src/images/icon.png',
             sizes: [96, 128, 192, 256, 384, 512],
             type: 'image/png',
           },
