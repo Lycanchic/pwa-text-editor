@@ -38,7 +38,7 @@ module.exports = () => {
           {
             src: 'src/images/icon.png',
             sizes: [96, 128, 192, 256, 384, 512],
-            type: 'image/png',
+            type: 'image.png',
           },
         ],
       }),
