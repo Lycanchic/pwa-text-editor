@@ -30,5 +30,28 @@ module.exports = () => {
         },
       ],
     },
-   }
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: 'src/index.html'
+      }),
+      new InjectMainfest.GenerateSW({
+        clientsClaim: true,
+        skipWaiting: true,
+      }),
+      new WebpackPwaManifest({
+        name: 'My App',
+        short_name: 'My App',
+        description: 'My App Description',
+        background_color: '#ffffff',
+        theme_color: '#31a9e1',
+        icons: [
+          {
+            src: 'src/assets/icon.png',
+            sizes: [96, 128, 192, 256, 384, 512],
+            type: 'image/png',
+          },
+        ],
+      }),
+    ],
   };
+ }
