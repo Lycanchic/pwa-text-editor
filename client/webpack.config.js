@@ -17,24 +17,27 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [
-      
-    ],
-
+    
     module: {
       rules: [
         {
-          test: /\.css$/,
-         // exclude: /node_modules/,//
+          test: /\.css$/i,
           use: [ 'style-loader', 'css-loader'],
         },
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          use:{
+            loader: 'babel-loader',
+          }
+        }
       ],
     },
     plugins: [
       new HtmlWebpackPlugin({
         template: 'src/index.html'
       }),
-      new InjectMainfest ({
+      new InjectManifest ({
         swSrc: './src-sw.js',
         swDest: 'src/sw.js',
       }),
