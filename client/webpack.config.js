@@ -17,29 +17,10 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    
-    module: {
-      rules: [
-        {
-          test: /\.css$/i,
-          use: [ 'style-loader', 'css-loader'],
-        },
-        {
-          test: /\.m?js$/,
-          exclude: /node_modules/,
-          use:{
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-              plugins:[ '@babel/pliugin-proposal-objec-rest-spread', '@babel/transform-runtime'],
-            }
-          }
-        }
-      ],
-    },
     plugins: [
       new HtmlWebpackPlugin({
-        template: 'src/index.html'
+        template: 'src/index.html',
+        title: 'J.A.T.E'
       }),
       new InjectManifest ({
         swSrc: './src-sw.js',
@@ -60,5 +41,25 @@ module.exports = () => {
         ],
       }),
     ],
+    module: {
+      rules: [
+        {
+          test: /\.css$/i,
+          use: [ 'style-loader', 'css-loader'],
+        },
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          use:{
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins:[ '@babel/pliugin-proposal-objec-rest-spread', '@babel/transform-runtime'],
+            }
+          }
+        }
+      ],
+    },
+   
   };
  }
