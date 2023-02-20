@@ -19,7 +19,7 @@ export const putDb = async (content) => {
     const tx = database.transaction('jate', 'readwrite');
     const store = tx.objectStore('jate');
     const request = store.put({ id: 1, value: content });
-    await request;
+    const result = await request;
     console.log('Data successfully saved');
   } catch (error) {
     console.error('Error while putting data to the database', error);
@@ -31,7 +31,7 @@ export const putDb = async (content) => {
 export const getDb = async () => {
   try {
     const database = await openDB('jate', 1);
-    const tx = database.transaction('jate', 'readonly');
+    const tx = jateDb.transaction('jate', 'readonly');
     const store = tx.objectStore('jate');
     const request = store.get(1);
     const result = await request; 
@@ -48,4 +48,4 @@ export const getDb = async () => {
   }
 };
 
-initDb();
+initdb();

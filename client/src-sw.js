@@ -36,9 +36,10 @@ registerRoute(
     // Set a name for the cache
     cacheName: 'assets-cache', 
     plugins: [
-      // Add a plugin to ensure only certain response statuses are cached
+  // Add a plugin to ensure only certain response statuses are cached
       new CacheableResponsePlugin({
-        statuses: [0, 200], // Only cache responses with a status code of 0 or 200
+  // Only cache responses with a status code of 0 or 200  
+        statuses: [0, 200], 
       }),
     ],
   })
