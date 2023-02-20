@@ -35,5 +35,8 @@
   "short_name": "J.A.T.E",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "/"
+  "start_url": "/",
+  "description": "JavaScript note Taker",
+  "background_color": "#225ca3",
+  "theme_color": "#225ca3"
 }
