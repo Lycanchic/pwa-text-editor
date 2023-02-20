@@ -34,8 +34,8 @@ registerRoute(
   // Use the Stale-While-Revalidate strategy for caching and fetching
   new StaleWhileRevalidate({
     // Set a name for the cache
-    cacheName: 'assets-cache', 
-    plugins: [
+   cacheName: 'asset-cache', 
+   plugins: [
   // Add a plugin to ensure only certain response statuses are cached
       new CacheableResponsePlugin({
   // Only cache responses with a status code of 0 or 200  
