@@ -1,4 +1,4 @@
-const butInstall = document.getElementById('buttonInstall');
+const butInstall = document.getElementById('butInstall');
 let deferredPrompt;
 
 // Logic for installing the PWA

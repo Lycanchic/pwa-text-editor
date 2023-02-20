@@ -5,15 +5,13 @@
 ## Images of the deployed website:
 ***
 
-## Home Page
-[home page image]
+## Main Page
+![Main](client/src/images/jateMain.png)
 
-## Page 2
-[ page 2 image]
+<br>
 
-## Page 3
-[ page 3 image]
-
+## Manifest page
+![Manifest Page](client/src/images/jateManifest.png)
 
 
 ## User Story
@@ -78,15 +76,17 @@ THEN I should have proper build scripts for a webpack application
 ## THE DEPLOYED REPO CAN BE FOUND AT THE FOLLOWING URL:
 ***
 
-[Deployed URL]
-
+[Heroku Deployed URL](https://pwa-text-editor-ch19.herokuapp.com/)
   ## INSTALLATION OF THE REPO FROM GITHUB
   ***
-  A copy of the repository can be cloned at [Click here](https://github.com/Lycanchic/pwa-text-editor.git)
+  A copy of the repository can be cloned at 
+  [Click 
+  Here](https://github.com/Lycanchic/pwa-text-editor)
     * Simply click on the repo and select **Clone**. 
     * From the drop down menu select the copy icon. Type (directly into your terminal):
-    ```
-    'git clone' + 'the repo link' + enter.
+    
+  
+    ` 'git clone' + 'the repo link' + enter. `
      
 
 - - -
